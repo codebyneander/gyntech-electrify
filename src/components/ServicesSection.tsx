@@ -1,6 +1,5 @@
 import { Home, Building2, MapPin } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
-import estacoesImg from "@/assets/estacoes-recarga.webp";
 
 const services = [
   {
@@ -17,7 +16,6 @@ const services = [
     icon: MapPin,
     title: "Eletropostos Comerciais e Gestão de Frotas",
     copy: "Atraia o cobiçado público das classes A/B e agregue imenso valor tecnológico ao seu estacionamento particular, shopping center, clínica médica sofisticada ou restaurante de alto padrão. Projetamos, fornecemos infraestrutura para totens rápidos e configuramos a gestão dos sistemas de tarifação inteligente, viabilizando novos fluxos robustos de receita corporativa.",
-    image: estacoesImg,
   },
 ];
 
