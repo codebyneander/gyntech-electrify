@@ -14,12 +14,9 @@ const trustItems = [
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
     {/* BG: left half image, right half solid */}
-    <div className="absolute inset-0 flex">
-      <div className="w-1/2 relative">
-        <img src={bgCharger} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-background/75 backdrop-blur-sm" />
-      </div>
-      <div className="w-1/2" style={{ backgroundColor: "#0F172A" }} />
+    <div className="absolute inset-0">
+      <img src={bgCharger} alt="" className="w-full h-full object-cover" />
+      <div className="absolute inset-0 bg-background/75 backdrop-blur-sm" />
     </div>
 
     <div className="container relative z-10 grid lg:grid-cols-2 gap-10 items-center py-16 lg:py-24">
