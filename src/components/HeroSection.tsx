@@ -1,9 +1,9 @@
 import { Zap } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
-import InstagramPhoneMockup from "./InstagramPhoneMockup";
-import bgVeiculo from "@/assets/bg-veiculo.webp";
+import heroImg from "@/assets/hero-ev-charger.webp";
 
-const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5562993433548";
+const WHATSAPP_URL =
+  "https://api.whatsapp.com/send?phone=5562993433548&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20instala%C3%A7%C3%A3o%20de%20carregador.";
 
 const trustItems = [
   "Sem Fios Expostos",
@@ -15,7 +15,7 @@ const HeroSection = () => (
   <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
     {/* BG Image */}
     <div className="absolute inset-0">
-      <img src={bgVeiculo} alt="" className="w-full h-full object-cover" />
+      <img src={heroImg} alt="" className="w-full h-full object-cover" />
       <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
     </div>
 
@@ -27,21 +27,21 @@ const HeroSection = () => (
 
         <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight tracking-tight">
           Carregue o seu Veículo Elétrico no Conforto da sua Casa com{" "}
-          <span className="text-primary">Engenharia, Segurança</span> e Padronização.
+          <span className="text-primary whitespace-nowrap">Engenharia, Segurança</span> e{" "}
+          <span className="text-primary">Padronização.</span>
         </h1>
 
         <p className="text-base lg:text-lg text-muted-foreground max-w-xl leading-relaxed">
           O seu veículo elétrico custou caro. A infraestrutura de recarga não é um serviço para aventureiros.
           Oferecemos instalação profissional, laudos técnicos precisos, dimensionamento matemático de carga
-          e conformidade estrita com as Normas de Segurança ABNT (NBR 17019 e NBR 5410). Projetamos paz de
-          espírito para Residências, Condomínios Verticais e Redes Comerciais.
+          e conformidade estrita com as Normas de Segurança ABNT (NBR 17019 e NBR 5410).
         </p>
 
         <a
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 self-start px-8 py-4 text-base font-bold bg-primary text-primary-foreground rounded-xl animate-pulse-glow hover:scale-105 transition-transform duration-300"
+          className="inline-flex items-center gap-3 self-start w-full sm:w-auto justify-center px-8 py-4 text-base font-bold bg-primary text-primary-foreground rounded-xl animate-pulse-glow hover:scale-105 transition-transform duration-300"
         >
           <Zap size={20} />
           SOLICITAR ORÇAMENTO NO WHATSAPP
@@ -58,7 +58,14 @@ const HeroSection = () => (
       </AnimatedSection>
 
       <AnimatedSection delay={0.3} className="hidden lg:block">
-        <InstagramPhoneMockup />
+        <div className="relative rounded-2xl overflow-hidden shadow-2xl neon-glow">
+          <img
+            src={heroImg}
+            alt="Veículo elétrico conectado a carregador Wallbox em garagem moderna"
+            className="w-full h-auto"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
+        </div>
       </AnimatedSection>
     </div>
   </section>
