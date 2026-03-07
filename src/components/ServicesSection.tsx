@@ -1,6 +1,5 @@
 import { Home, Building2, MapPin } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
-import estacoesImg from "@/assets/estacoes-recarga.webp";
 
 const services = [
   {
@@ -17,7 +16,6 @@ const services = [
     icon: MapPin,
     title: "Eletropostos Comerciais e Gestão de Frotas",
     copy: "Atraia o cobiçado público das classes A/B e agregue imenso valor tecnológico ao seu estacionamento particular, shopping center, clínica médica sofisticada ou restaurante de alto padrão. Projetamos, fornecemos infraestrutura para totens rápidos e configuramos a gestão dos sistemas de tarifação inteligente, viabilizando novos fluxos robustos de receita corporativa.",
-    image: estacoesImg,
   },
 ];
 
@@ -34,12 +32,6 @@ const ServicesSection = () => (
         {services.map((s, i) => (
           <AnimatedSection key={s.title} delay={i * 0.15}>
             <div className="glass-card h-full flex flex-col overflow-hidden hover:scale-[1.02] transition-transform duration-300 group">
-              {s.image && (
-                <div className="relative h-48 overflow-hidden">
-                  <img src={s.image} alt={s.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-background/50" />
-                </div>
-              )}
               <div className="p-6 flex flex-col gap-4 flex-1">
                 <div className="w-12 h-12 rounded-lg bg-primary/15 text-primary flex items-center justify-center">
                   <s.icon size={24} />

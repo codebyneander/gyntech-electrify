@@ -1,6 +1,5 @@
 import { Zap } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
-import logo from "@/assets/logo-gyntech.webp";
 
 const WHATSAPP_URL = "https://wa.me/5562999999999?text=Olá! Gostaria de falar com Elias Barbo sobre instalação.";
 
@@ -35,7 +34,7 @@ const FooterCta = () => (
     {/* Footer */}
     <footer className="border-t border-border py-10">
       <div className="container flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-muted-foreground">
-        <img src={logo} alt="GYNTECH" className="h-8 opacity-60" />
+        <span className="font-heading font-extrabold text-lg text-foreground/60">GYNTECH Elétrica MOB</span>
         <div className="text-center md:text-right space-y-1">
           <p>CNPJ 54.987.788/0001-09 — Elias Maximiano Barbo ME</p>
           <p>Região Metropolitana de Goiânia, GO</p>

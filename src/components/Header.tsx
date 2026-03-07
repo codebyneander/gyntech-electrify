@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo-gyntech.webp";
 
 const WHATSAPP_URL = "https://wa.me/5562999999999?text=Olá! Gostaria de solicitar um orçamento.";
 
@@ -22,7 +21,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container flex items-center justify-between h-16 md:h-18">
-        <img src={logo} alt="GYNTECH Elétrica Mob" className="h-10 md:h-12 w-auto" />
+        <span className="font-heading font-extrabold text-base md:text-lg text-foreground">GYNTECH Elétrica MOB</span>
 
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((l) => (
