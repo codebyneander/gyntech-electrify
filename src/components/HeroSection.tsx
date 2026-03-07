@@ -1,6 +1,7 @@
 import { Zap } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import heroImg from "@/assets/hero-ev-charger.webp";
+import logoWatermark from "@/assets/logo-gyntech-eletrica-mob-oficial.webp";
 
 const WHATSAPP_URL =
   "https://api.whatsapp.com/send?phone=5562993433548&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20instala%C3%A7%C3%A3o%20de%20carregador.";
@@ -17,6 +18,16 @@ const HeroSection = () => (
     <div className="absolute inset-0 -z-10">
       <img src={heroImg} alt="" className="w-full h-full object-cover" />
       <div className="absolute inset-0 bg-background/85 backdrop-blur-md" />
+    </div>
+
+    {/* Logo watermark — subtle, blurred, almost invisible */}
+    <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
+      <img
+        src={logoWatermark}
+        alt=""
+        className="w-[80%] max-w-4xl h-auto opacity-[0.07] blur-[40px]"
+        style={{ mixBlendMode: "overlay" }}
+      />
     </div>
 
     <div className="container relative z-10 max-w-3xl py-16 lg:py-24">
