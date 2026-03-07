@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
 interface Props {
-  children: ReactNode;
+  children?: ReactNode;
   className?: string;
   delay?: number;
 }
