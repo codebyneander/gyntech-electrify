@@ -4,21 +4,26 @@ import seloImg from "@/assets/selo-20-anos.webp";
 
 const AboutSection = () => (
   <section id="empresa" className="relative py-20 lg:py-28 overflow-hidden">
-    <div className="container grid lg:grid-cols-2 gap-12 items-center">
-      {/* Images */}
-      <AnimatedSection className="relative">
-        <div className="relative rounded-2xl overflow-hidden shadow-2xl max-w-md mx-auto lg:mx-0">
-          <img src={eliasImg} alt="Elias Barbo - Fundador da GYNTECH" className="w-full h-auto" />
-          <div className="absolute inset-0 bg-background/30" />
-        </div>
-        <div className="absolute -bottom-6 -right-4 lg:right-8 w-48 md:w-56 rounded-xl overflow-hidden shadow-xl border-2 border-primary/30">
-          <img src={seloImg} alt="20 anos de experiência" className="w-full h-auto" />
+    <div className="container grid lg:grid-cols-2 gap-16 items-center">
+      {/* Photo */}
+      <AnimatedSection className="flex justify-center lg:justify-start">
+        <div className="relative">
+          <div className="rounded-2xl overflow-hidden shadow-2xl w-full max-w-md">
+            <img
+              src={eliasImg}
+              alt="Elias Barbo - Fundador da GYNTECH"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+          <div className="absolute -bottom-5 -right-5 w-28 md:w-32 rounded-xl overflow-hidden shadow-xl border border-border">
+            <img src={seloImg} alt="20 anos de experiência" className="w-full h-auto" />
+          </div>
         </div>
       </AnimatedSection>
 
       {/* Text */}
-      <AnimatedSection delay={0.2} className="flex flex-col gap-5">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight">
+      <AnimatedSection delay={0.2} className="flex flex-col gap-6">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight font-heading">
           Onde a <span className="text-primary">Inovação Verde</span> Encontra Duas Décadas de Engenharia Tradicional.
         </h2>
         <p className="text-muted-foreground leading-relaxed">
