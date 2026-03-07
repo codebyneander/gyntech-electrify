@@ -2,7 +2,7 @@ import { Zap } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import bgVeiculo from "@/assets/bg-veiculo.webp";
 
-const WHATSAPP_URL = "https://wa.me/5562999999999?text=Olá! Gostaria de solicitar um orçamento de instalação.";
+const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5562993433548";
 
 const trustItems = [
   "Sem Fios Expostos",
