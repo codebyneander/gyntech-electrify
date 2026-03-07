@@ -1,12 +1,13 @@
 import { Zap } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
-const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5562993433548";
+const WHATSAPP_URL =
+  "https://api.whatsapp.com/send?phone=5562993433548&text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20instala%C3%A7%C3%A3o%20de%20carregador.";
 
 const FooterCta = () => (
   <>
     {/* CTA Final */}
-    <section className="py-20 lg:py-28">
+    <section className="py-24 lg:py-32">
       <div className="container">
         <AnimatedSection>
           <div className="glass-card border-primary/30 p-8 md:p-14 text-center flex flex-col items-center gap-6 neon-glow">
@@ -21,7 +22,7 @@ const FooterCta = () => (
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-8 py-4 text-base font-bold bg-primary text-primary-foreground rounded-xl animate-pulse-glow hover:scale-105 transition-transform duration-300"
+              className="inline-flex items-center gap-3 w-full sm:w-auto justify-center px-8 py-4 text-base font-bold bg-primary text-primary-foreground rounded-xl animate-pulse-glow hover:scale-105 transition-transform duration-300"
             >
               <Zap size={20} />
               FALAR COM ELIAS BARBO NO WHATSAPP 🟢

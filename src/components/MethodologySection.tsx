@@ -18,8 +18,8 @@ const differentials = [
 ];
 
 const MethodologySection = () => (
-  <section id="metodologia" className="relative py-20 lg:py-28 overflow-hidden">
-    <div className="container grid lg:grid-cols-2 gap-12 items-center">
+  <section id="metodologia" className="relative py-24 lg:py-32 overflow-hidden">
+    <div className="container grid lg:grid-cols-2 gap-14 items-center">
       <AnimatedSection className="flex flex-col gap-6">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight">
           Instalações Amadoras <span className="text-primary">Custam Caro.</span> Nós Investimos em Segurança e Ciência Exata.
