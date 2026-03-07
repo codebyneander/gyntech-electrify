@@ -1,18 +1,18 @@
 import AnimatedSection from "./AnimatedSection";
 import eliasImg from "@/assets/elias-barbo.webp";
+import seloImg from "@/assets/selo-20-anos.webp";
 
 const AboutSection = () => (
-  <section id="empresa" className="relative py-24 lg:py-32 overflow-hidden">
-    <div className="container grid lg:grid-cols-2 gap-14 items-center">
-      {/* Image */}
-      <AnimatedSection>
+  <section id="empresa" className="relative py-20 lg:py-28 overflow-hidden">
+    <div className="container grid lg:grid-cols-2 gap-12 items-center">
+      {/* Images */}
+      <AnimatedSection className="relative">
         <div className="relative rounded-2xl overflow-hidden shadow-2xl max-w-md mx-auto lg:mx-0">
-          <img
-            src={eliasImg}
-            alt="Elias Barbo - Fundador da GYNTECH"
-            className="w-full h-auto"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />
+          <img src={eliasImg} alt="Elias Barbo - Fundador da GYNTECH" className="w-full h-auto" />
+          <div className="absolute inset-0 bg-background/30" />
+        </div>
+        <div className="absolute -bottom-6 -right-4 lg:right-8 w-48 md:w-56 rounded-xl overflow-hidden shadow-xl border-2 border-primary/30">
+          <img src={seloImg} alt="20 anos de experiência" className="w-full h-auto" />
         </div>
       </AnimatedSection>
 

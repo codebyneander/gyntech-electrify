@@ -18,14 +18,8 @@ const differentials = [
 ];
 
 const MethodologySection = () => (
-  <section id="metodologia" className="relative py-24 lg:py-32 overflow-hidden">
-    {/* BG Image — blurred & dimmed */}
-    <div className="absolute inset-0 -z-10">
-      <img src={tecnicoImg} alt="" className="w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-background/85 backdrop-blur-md" />
-    </div>
-
-    <div className="container max-w-3xl">
+  <section id="metodologia" className="relative py-20 lg:py-28 overflow-hidden">
+    <div className="container grid lg:grid-cols-2 gap-12 items-center">
       <AnimatedSection className="flex flex-col gap-6">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight">
           Instalações Amadoras <span className="text-primary">Custam Caro.</span> Nós Investimos em Segurança e Ciência Exata.
@@ -47,6 +41,11 @@ const MethodologySection = () => (
             </AnimatedSection>
           ))}
         </div>
+      </AnimatedSection>
+
+      <AnimatedSection delay={0.2} className="relative rounded-2xl overflow-hidden shadow-2xl max-w-xl mx-auto aspect-video">
+        <img src={tecnicoImg} alt="Técnico realizando instalação de Wallbox e quadro elétrico para veículos elétricos" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-background/10" />
       </AnimatedSection>
     </div>
   </section>

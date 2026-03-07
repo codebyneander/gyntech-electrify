@@ -20,7 +20,7 @@ const services = [
 ];
 
 const ServicesSection = () => (
-  <section id="solucoes" className="bg-surface-alt py-24 lg:py-32">
+  <section id="solucoes" className="bg-surface-alt py-20 lg:py-28">
     <div className="container">
       <AnimatedSection className="text-center mb-14">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold">
@@ -28,12 +28,12 @@ const ServicesSection = () => (
         </h2>
       </AnimatedSection>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((s, i) => (
           <AnimatedSection key={s.title} delay={i * 0.15}>
-            <div className="glass-card h-full flex flex-col overflow-hidden transition-all duration-300 group hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_0_20px_hsl(160_63%_52%/0.15)]">
-              <div className="p-7 flex flex-col gap-4 flex-1">
-                <div className="w-12 h-12 rounded-lg bg-primary/15 text-primary flex items-center justify-center group-hover:bg-primary/25 transition-colors duration-300">
+            <div className="glass-card h-full flex flex-col overflow-hidden hover:scale-[1.02] transition-transform duration-300 group">
+              <div className="p-6 flex flex-col gap-4 flex-1">
+                <div className="w-12 h-12 rounded-lg bg-primary/15 text-primary flex items-center justify-center">
                   <s.icon size={24} />
                 </div>
                 <h3 className="text-lg font-bold">{s.title}</h3>
