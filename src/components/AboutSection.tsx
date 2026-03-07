@@ -1,6 +1,6 @@
 import AnimatedSection from "./AnimatedSection";
 import eliasImg from "@/assets/elias-barbo.webp";
-import seloImg from "@/assets/selo-20-anos.webp";
+
 
 const AboutSection = () => (
   <section id="empresa" className="relative py-20 lg:py-28 overflow-hidden">
@@ -14,9 +14,6 @@ const AboutSection = () => (
               alt="Elias Barbo - Fundador da GYNTECH"
               className="w-full h-auto object-cover"
             />
-          </div>
-          <div className="absolute -bottom-5 -right-5 w-28 md:w-32 rounded-xl overflow-hidden shadow-xl border border-border">
-            <img src={seloImg} alt="20 anos de experiência" className="w-full h-auto" />
           </div>
         </div>
       </AnimatedSection>
