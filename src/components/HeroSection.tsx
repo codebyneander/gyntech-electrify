@@ -20,6 +20,16 @@ const HeroSection = () => (
       <div className="absolute inset-0 bg-background/85 backdrop-blur-md" />
     </div>
 
+    {/* Logo watermark — subtle, blurred, almost invisible */}
+    <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
+      <img
+        src={logoWatermark}
+        alt=""
+        className="w-[80%] max-w-4xl h-auto opacity-[0.07] blur-[40px]"
+        style={{ mixBlendMode: "overlay" }}
+      />
+    </div>
+
     <div className="container relative z-10 max-w-3xl py-16 lg:py-24">
       <AnimatedSection className="flex flex-col gap-6">
         <span className="inline-flex items-center gap-2 self-start px-4 py-1.5 text-xs font-semibold bg-primary/15 text-primary rounded-full border border-primary/30">
