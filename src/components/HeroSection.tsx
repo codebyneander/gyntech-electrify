@@ -1,8 +1,9 @@
 import { Zap } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
+import InstagramPhoneMockup from "./InstagramPhoneMockup";
 import bgVeiculo from "@/assets/bg-veiculo.webp";
 
-const WHATSAPP_URL = "https://wa.me/5562999999999?text=Olá! Gostaria de solicitar um orçamento de instalação.";
+const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5562993433548";
 
 const trustItems = [
   "Sem Fios Expostos",
@@ -56,7 +57,9 @@ const HeroSection = () => (
         </div>
       </AnimatedSection>
 
-      <AnimatedSection delay={0.3} className="hidden lg:block" />
+      <AnimatedSection delay={0.3} className="hidden lg:block">
+        <InstagramPhoneMockup />
+      </AnimatedSection>
     </div>
   </section>
 );
