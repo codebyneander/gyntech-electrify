@@ -1,0 +1,64 @@
+import { Zap } from "lucide-react";
+import AnimatedSection from "./AnimatedSection";
+import bgVeiculo from "@/assets/bg-veiculo.webp";
+
+const WHATSAPP_URL = "https://wa.me/5562999999999?text=Olá! Gostaria de solicitar um orçamento de instalação.";
+
+const trustItems = [
+  "Sem Fios Expostos",
+  "Proteção DR Tipo B Inclusa",
+  "Laudo Técnico p/ Síndicos",
+];
+
+const HeroSection = () => (
+  <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    {/* BG Image */}
+    <div className="absolute inset-0">
+      <img src={bgVeiculo} alt="" className="w-full h-full object-cover" />
+      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+    </div>
+
+    <div className="container relative z-10 grid lg:grid-cols-2 gap-10 items-center py-16 lg:py-24">
+      <AnimatedSection className="flex flex-col gap-6">
+        <span className="inline-flex items-center gap-2 self-start px-4 py-1.5 text-xs font-semibold bg-primary/15 text-primary rounded-full border border-primary/30">
+          <Zap size={14} /> Especialistas Oficiais em Eletromobilidade em Goiânia e Região Metropolitana
+        </span>
+
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight tracking-tight">
+          Carregue o seu Veículo Elétrico no Conforto da sua Casa com{" "}
+          <span className="text-primary">Engenharia, Segurança</span> e Padronização.
+        </h1>
+
+        <p className="text-base lg:text-lg text-muted-foreground max-w-xl leading-relaxed">
+          O seu veículo elétrico custou caro. A infraestrutura de recarga não é um serviço para aventureiros.
+          Oferecemos instalação profissional, laudos técnicos precisos, dimensionamento matemático de carga
+          e conformidade estrita com as Normas de Segurança ABNT (NBR 17019 e NBR 5410). Projetamos paz de
+          espírito para Residências, Condomínios Verticais e Redes Comerciais.
+        </p>
+
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-3 self-start px-8 py-4 text-base font-bold bg-primary text-primary-foreground rounded-xl animate-pulse-glow hover:scale-105 transition-transform duration-300"
+        >
+          <Zap size={20} />
+          SOLICITAR ORÇAMENTO NO WHATSAPP
+        </a>
+
+        <div className="flex flex-wrap gap-4 mt-2">
+          {trustItems.map((item) => (
+            <span key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
+              <span className="w-5 h-5 rounded-full bg-primary/20 text-primary flex items-center justify-center text-xs">✓</span>
+              {item}
+            </span>
+          ))}
+        </div>
+      </AnimatedSection>
+
+      <AnimatedSection delay={0.3} className="hidden lg:block" />
+    </div>
+  </section>
+);
+
+export default HeroSection;
