@@ -12,15 +12,14 @@ const trustItems = [
 ];
 
 const HeroSection = () => (
-  <section className="relative min-h-screen pt-20 overflow-hidden">
-    {/* BG */}
+  <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    {/* BG Image — blurred & dimmed */}
     <div className="absolute inset-0 -z-10">
       <img src={heroImg} alt="" className="w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-background/85 backdrop-blur-md" />
     </div>
 
-    <div className="container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
-      {/* Left column — text */}
+    <div className="container relative z-10 max-w-3xl py-16 lg:py-24">
       <AnimatedSection className="flex flex-col gap-6">
         <span className="inline-flex items-center gap-2 self-start px-4 py-1.5 text-xs font-semibold bg-primary/15 text-primary rounded-full border border-primary/30">
           <Zap size={14} /> Especialistas Oficiais em Eletromobilidade em Goiânia e Região Metropolitana
@@ -56,15 +55,6 @@ const HeroSection = () => (
             </span>
           ))}
         </div>
-      </AnimatedSection>
-
-      {/* Right column — image */}
-      <AnimatedSection delay={0.3} className="relative">
-        <img
-          src={heroImg}
-          alt="Veículo elétrico conectado a carregador Wallbox em garagem moderna"
-          className="relative max-w-full h-auto rounded-2xl shadow-2xl neon-glow"
-        />
       </AnimatedSection>
     </div>
   </section>
