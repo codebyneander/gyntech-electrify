@@ -1,22 +1,30 @@
 import AnimatedSection from "./AnimatedSection";
 
 const brands = [
-  { name: "BYD" },
-  { name: "GWM" },
-  { name: "Volvo" },
-  { name: "Porsche" },
-  { name: "BMW" },
-  { name: "Audi" },
+  { name: "BYD", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e2/BYD_Auto_2022_logo.svg" },
+  { name: "GWM", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d2/GWM_2025_logo.svg" },
+  { name: "Volvo", logo: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Volvo_Iron_Mark_-_black.svg" },
+  { name: "Porsche", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Porsche_Wortmarke.svg" },
+  { name: "BMW", logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" },
+  { name: "Audi", logo: "https://upload.wikimedia.org/wikipedia/commons/1/15/Audi_logo.svg" },
   { name: "Jac Motors" },
   { name: "WEG" },
   { name: "Intelbras" },
 ];
 
-const BrandLogo = ({ name }: { name: string }) => (
-  <div className="flex-shrink-0 opacity-50 hover:opacity-100 transition-opacity duration-300 cursor-default select-none px-6 md:px-8">
-    <span className="text-xl md:text-2xl font-heading font-bold tracking-wider text-foreground whitespace-nowrap">
-      {name}
-    </span>
+const BrandLogo = ({ name, logo }: { name: string; logo?: string }) => (
+  <div className="flex-shrink-0 cursor-default select-none px-6 md:px-8">
+    {logo ? (
+      <img
+        src={logo}
+        alt={name}
+        className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-50 hover:opacity-100 transition-all duration-300"
+      />
+    ) : (
+      <span className="text-xl md:text-2xl font-heading font-bold tracking-wider text-foreground opacity-50 hover:opacity-100 transition-all duration-300 whitespace-nowrap">
+        {name}
+      </span>
+    )}
   </div>
 );
 
@@ -40,7 +48,7 @@ const SocialProofBar = () => {
 
         <div className="flex items-center animate-marquee group-hover:[animation-play-state:paused] w-max gap-4 md:gap-6">
           {doubled.map((b, i) => (
-            <BrandLogo key={`${b.name}-${i}`} name={b.name} />
+            <BrandLogo key={`${b.name}-${i}`} name={b.name} logo={b.logo} />
           ))}
         </div>
       </div>
