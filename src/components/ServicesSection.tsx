@@ -20,7 +20,7 @@ const services = [
 ];
 
 const ServicesSection = () => (
-  <section id="solucoes" className="bg-surface-alt py-20 lg:py-28">
+  <section id="servicos" className="bg-surface-alt py-20 lg:py-28">
     <div className="container">
       <AnimatedSection className="text-center mb-14">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold">

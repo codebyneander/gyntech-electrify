@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5562993433548";
 
 const navLinks = [
-  { label: "Nossas Soluções", href: "#solucoes" },
+  { label: "Nossas Soluções", href: "#servicos" },
   { label: "A Empresa", href: "#empresa" },
   { label: "Metodologia Segura", href: "#metodologia" },
   { label: "FAQ", href: "#faq" },
