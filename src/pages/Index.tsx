@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import SocialProofBar from "@/components/SocialProofBar";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
 import MethodologySection from "@/components/MethodologySection";
 import ServicesInActionSection from "@/components/ServicesInActionSection";
 import FaqSection from "@/components/FaqSection";
