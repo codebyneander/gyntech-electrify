@@ -17,6 +17,7 @@ const Index = () => (
     <SocialProofBar />
     <AboutSection />
     <ServicesSection />
+    <HowItWorksSection />
     <MethodologySection />
     <ServicesInActionSection />
     <FaqSection />
