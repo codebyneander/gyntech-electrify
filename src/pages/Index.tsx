@@ -21,6 +21,7 @@ const Index = () => (
     <HowItWorksSection />
     <MethodologySection />
     <ServicesInActionSection />
+    <TestimonialsSection />
     <FaqSection />
     <FooterCta />
     <WhatsAppFloat />
