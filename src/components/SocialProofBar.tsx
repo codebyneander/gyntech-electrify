@@ -48,7 +48,7 @@ const SocialProofBar = () => {
 
         <div className="flex items-center animate-marquee group-hover:[animation-play-state:paused] w-max gap-4 md:gap-6">
           {doubled.map((b, i) => (
-            <BrandLogo key={`${b.name}-${i}`} name={b.name} />
+            <BrandLogo key={`${b.name}-${i}`} name={b.name} logo={b.logo} />
           ))}
         </div>
       </div>
