@@ -1,3 +1,5 @@
+import { Zap } from "lucide-react";
+
 const anchors = [
   { label: "Nossos Serviços", href: "#servicos" },
   { label: "Demonstrações", href: "#demonstracoes" },
@@ -14,7 +16,11 @@ const AnchorMenu = () => {
   return (
     <div className="sticky top-16 z-40 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container py-3">
-        <div className="flex gap-3 overflow-x-auto scrollbar-hide">
+        <p className="text-center text-sm text-muted-foreground mb-3 flex items-center justify-center gap-1.5">
+          <Zap className="h-4 w-4 text-primary fill-primary" />
+          <span>Acesso Rápido: Navegue pelas seções do site</span>
+        </p>
+        <div className="flex gap-3 overflow-x-auto scrollbar-hide justify-center px-4 md:px-0">
           {anchors.map((a) => (
             <button
               key={a.href}

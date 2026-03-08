@@ -4,7 +4,7 @@ import jacMotorsLogo from "@/assets/jac-motors_logo.svg";
 const brands = [
   { name: "BYD", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e2/BYD_Auto_2022_logo.svg" },
   { name: "GWM", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d2/GWM_2025_logo.svg" },
-  { name: "Volvo", logo: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Volvo_Iron_Mark_-_black.svg" },
+  { name: "Volvo", logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Volvo_wordmark.svg" },
   { name: "Porsche", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Porsche_Wortmarke.svg" },
   { name: "BMW", logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" },
   { name: "Audi", logo: "https://upload.wikimedia.org/wikipedia/commons/1/15/Audi_logo.svg" },
