@@ -4,19 +4,16 @@ import { Button } from "./ui/button";
 
 const testimonials = [
   {
-    text: "Ouça o relato real de quem já garantiu segurança na recarga em casa.",
-    name: "Cliente Gyntech",
-    hasAudio: true,
+    text: "Atendimento ágil e muito profissional. Resolveram toda a infraestrutura da minha garagem sem dor de cabeça e o carregador está funcionando perfeitamente. Recomendo a Gyntech!",
+    name: "Rafael S. - BYD Dolphin",
   },
   {
     text: "Serviço impecável do início ao fim. A equipe analisou a rede da minha casa com muito cuidado antes de instalar o carregador. O acabamento ficou perfeito, sem fios expostos. Recomendo de olhos fechados!",
     name: "Carlos M. - GWM Haval H6",
-    hasAudio: false,
   },
   {
     text: "Trabalho extremamente técnico e organizado. Diferente de curiosos, eles realmente entendem das normas de segurança. Me explicaram exatamente como usar o equipamento e deixaram tudo funcionando.",
     name: "Mariana T. - Volvo XC40",
-    hasAudio: false,
   },
 ];
 
@@ -40,21 +37,21 @@ const TestimonialsSection = () => (
         </p>
       </AnimatedSection>
 
+      <AnimatedSection className="flex flex-col items-center mb-12" delay={0.1}>
+        <p className="text-muted-foreground mb-4 text-lg">🎧 Ouça o relato real de um cliente:</p>
+        <div className="bg-white/10 rounded-xl p-4 w-full max-w-md">
+          <audio controls className="w-full" src="/audio/depoimento.mp3" />
+        </div>
+      </AnimatedSection>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
         {testimonials.map((t, i) => (
-          <AnimatedSection key={i} delay={i * 0.15}>
+          <AnimatedSection key={i} delay={i * 0.15 + 0.2}>
             <div className="glass-card rounded-2xl p-8 flex flex-col h-full">
               <Stars />
               <p className="text-foreground/90 italic leading-relaxed flex-1 mb-4">
                 "{t.text}"
               </p>
-              {t.hasAudio && (
-                <audio
-                  controls
-                  className="w-full mb-4 rounded-lg [&::-webkit-media-controls-panel]:bg-card"
-                  src="/audio/depoimento.mp3"
-                />
-              )}
               <p className="text-sm text-muted-foreground font-medium">
                 — {t.name}
               </p>
