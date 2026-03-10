@@ -1,7 +1,7 @@
 import { Zap } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
-const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5562993433548";
+const WHATSAPP_URL = "https://wa.link/vt5tyr";
 
 const FooterCta = () => (
   <>

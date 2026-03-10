@@ -3,7 +3,7 @@ import AnimatedSection from "./AnimatedSection";
 import InstagramPhoneMockup from "./InstagramPhoneMockup";
 import bgCharger from "@/assets/bg-charger.webp";
 
-const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=5562993433548";
+const WHATSAPP_URL = "https://wa.link/vt5tyr";
 
 const trustItems = [
   "Sem Fios Expostos",
