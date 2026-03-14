@@ -25,7 +25,7 @@ const FaqSection = () => {
     <section id="faq" className="relative py-20 lg:py-28 overflow-hidden">
       {/* BG image */}
       <div className="absolute inset-0">
-        <img src={apertoImg} alt="" className="w-full h-full object-cover" />
+        <img src={apertoImg} alt="" width={1920} height={1080} loading="lazy" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-background/85 backdrop-blur-md" />
       </div>
 

@@ -1,4 +1,4 @@
-import instagramScreenshot from "@/assets/instagram-screenshot.png";
+import instagramScreenshot from "@/assets/instagram-screenshot.webp";
 
 const WHATSAPP_URL = "https://wa.me/556293343548?text=Ol%C3%A1%20Elias!";
 
@@ -18,6 +18,9 @@ const InstagramPhoneMockup = () => (
           <img
             src={instagramScreenshot}
             alt="Perfil Instagram @gyntecheletricamob"
+            width={280}
+            height={607}
+            loading="lazy"
             className="w-full h-full object-cover object-top"
           />
         </div>
