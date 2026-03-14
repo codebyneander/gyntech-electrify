@@ -1,4 +1,4 @@
-import instagramScreenshot from "@/assets/instagram-screenshot.png";
+import instagramScreenshot from "@/assets/instagram-screenshot.webp";
 
 const WHATSAPP_URL = "https://wa.me/556293343548?text=Ol%C3%A1%20Elias!";
 
