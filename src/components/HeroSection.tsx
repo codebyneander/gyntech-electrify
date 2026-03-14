@@ -15,7 +15,7 @@ const HeroSection = () => (
   <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
     {/* BG: left half image, right half solid */}
     <div className="absolute inset-0">
-      <img src={bgCharger} alt="" className="w-full h-full object-cover" />
+      <img src={bgCharger} alt="" width={1920} height={1080} className="w-full h-full object-cover" />
       <div className="absolute inset-0 bg-background/75 backdrop-blur-sm" />
     </div>
 

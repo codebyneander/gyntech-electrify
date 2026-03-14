@@ -44,7 +44,7 @@ const MethodologySection = () => (
       </AnimatedSection>
 
       <AnimatedSection delay={0.2} className="relative rounded-2xl overflow-hidden shadow-2xl max-w-xl mx-auto aspect-video">
-        <img src={tecnicoImg} alt="Técnico realizando instalação de Wallbox e quadro elétrico para veículos elétricos" className="w-full h-full object-cover" />
+        <img src={tecnicoImg} alt="Técnico realizando instalação de Wallbox e quadro elétrico para veículos elétricos" width={640} height={360} loading="lazy" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-background/10" />
       </AnimatedSection>
     </div>

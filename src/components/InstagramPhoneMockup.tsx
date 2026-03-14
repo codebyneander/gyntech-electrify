@@ -18,6 +18,9 @@ const InstagramPhoneMockup = () => (
           <img
             src={instagramScreenshot}
             alt="Perfil Instagram @gyntecheletricamob"
+            width={280}
+            height={607}
+            loading="lazy"
             className="w-full h-full object-cover object-top"
           />
         </div>

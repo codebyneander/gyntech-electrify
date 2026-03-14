@@ -17,6 +17,9 @@ const BrandLogo = ({ name, logo }: { name: string; logo?: string }) => (
       <img
         src={logo}
         alt={name}
+        width={120}
+        height={40}
+        loading="lazy"
         className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-50 hover:opacity-100 transition-all duration-300"
       />
     ) : (

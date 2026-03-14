@@ -12,6 +12,9 @@ const AboutSection = () => (
             <img
               src={eliasImg}
               alt="Elias Barbo - Fundador da GYNTECH"
+              width={448}
+              height={600}
+              loading="lazy"
               className="w-full h-auto object-cover"
             />
           </div>
