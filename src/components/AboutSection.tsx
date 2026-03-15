@@ -1,5 +1,5 @@
 import AnimatedSection from "./AnimatedSection";
-import eliasImg from "@/assets/elias-barbo.webp";
+import eliasImg from "@/assets/elias-barbo.png";
 
 
 const AboutSection = () => (
