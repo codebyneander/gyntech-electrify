@@ -1,13 +1,19 @@
 import AnimatedSection from "./AnimatedSection";
+import bydLogo from "@/assets/BYD_Auto_2022_logo.svg";
+import gwmLogo from "@/assets/GWM_2025_logo.svg";
+import volvoLogo from "@/assets/Volvo_Iron_Mark_-_black.svg";
+import porscheLogo from "@/assets/Porsche_Wortmarke.svg";
+import bmwLogo from "@/assets/BMW.svg";
+import audiLogo from "@/assets/Audi_logo.svg";
 import jacMotorsLogo from "@/assets/jac-motors_logo.svg";
 
 const brands = [
-  { name: "BYD", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e2/BYD_Auto_2022_logo.svg" },
-  { name: "GWM", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d2/GWM_2025_logo.svg" },
-  { name: "Volvo", logo: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Volvo_Iron_Mark_-_black.svg" },
-  { name: "Porsche", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Porsche_Wortmarke.svg" },
-  { name: "BMW", logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" },
-  { name: "Audi", logo: "https://upload.wikimedia.org/wikipedia/commons/1/15/Audi_logo.svg" },
+  { name: "BYD", logo: bydLogo },
+  { name: "GWM", logo: gwmLogo },
+  { name: "Volvo", logo: volvoLogo },
+  { name: "Porsche", logo: porscheLogo },
+  { name: "BMW", logo: bmwLogo },
+  { name: "Audi", logo: audiLogo },
   { name: "Jac Motors", logo: jacMotorsLogo },
 ];
 
