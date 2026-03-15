@@ -1,6 +1,6 @@
 import { ShieldCheck } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
-import tecnicoImg from "@/assets/tecnico-auditoria.webp";
+import tecnicoImg from "@/assets/tecnico-auditoria.png";
 
 const differentials = [
   {

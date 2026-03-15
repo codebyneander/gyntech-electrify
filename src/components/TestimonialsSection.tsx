@@ -40,7 +40,7 @@ const TestimonialsSection = () => (
       <AnimatedSection className="flex flex-col items-center mb-12" delay={0.1}>
         <p className="text-muted-foreground mb-4 text-lg">🎧 Ouça o relato real de um cliente:</p>
         <div className="bg-white/10 rounded-xl p-4 w-full max-w-md">
-          <audio controls className="w-full" src="/audio/depoimento.mp3" />
+          <audio controls preload="none" className="w-full" src="/audio/depoimento.mp3" />
         </div>
       </AnimatedSection>
 
