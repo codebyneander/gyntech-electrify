@@ -25,9 +25,9 @@ const steps = [
 ];
 
 const HowItWorksSection = () => (
-  <section id="como-funciona" className="py-20 md:py-28 bg-secondary/30">
+  <section id="como-funciona" className="py-24 md:py-32 bg-secondary/30">
     <div className="container mx-auto px-6">
-      <AnimatedSection className="text-center mb-14">
+      <AnimatedSection className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-heading font-bold mb-3">
           Como <span className="text-primary">Funciona</span>
         </h2>
@@ -48,7 +48,7 @@ const HowItWorksSection = () => (
                 <step.icon size={28} className="text-primary" />
               </div>
               <h3 className="font-heading font-bold text-lg mb-2">{step.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed max-w-[220px]">
+              <p className="text-muted-foreground text-base leading-relaxed max-w-[220px]">
                 {step.copy}
               </p>
             </AnimatedSection>

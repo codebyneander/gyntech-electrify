@@ -26,9 +26,9 @@ const Stars = () => (
 );
 
 const TestimonialsSection = () => (
-  <section id="depoimentos" className="py-20 md:py-28 bg-background">
+  <section id="depoimentos" className="py-24 md:py-32 bg-background">
     <div className="container mx-auto px-6">
-      <AnimatedSection className="text-center mb-14">
+      <AnimatedSection className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-heading font-bold mb-3">
           O Que Nossos <span className="text-primary">Clientes Dizem</span>
         </h2>
@@ -44,15 +44,15 @@ const TestimonialsSection = () => (
         </div>
       </AnimatedSection>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-10">
         {testimonials.map((t, i) => (
           <AnimatedSection key={i} delay={i * 0.15 + 0.2}>
             <div className="glass-card rounded-2xl p-8 flex flex-col h-full">
               <Stars />
-              <p className="text-foreground/90 italic leading-relaxed flex-1 mb-4">
+              <p className="text-foreground italic leading-relaxed flex-1 mb-4">
                 "{t.text}"
               </p>
-              <p className="text-sm text-muted-foreground font-medium">
+              <p className="text-base text-muted-foreground font-medium">
                 — {t.name}
               </p>
             </div>

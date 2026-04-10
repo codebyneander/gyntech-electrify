@@ -22,7 +22,7 @@ const FaqSection = () => {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="relative py-20 lg:py-28 overflow-hidden">
+    <section id="faq" className="relative py-24 lg:py-32 overflow-hidden">
       {/* BG image */}
       <div className="absolute inset-0">
         <img src={apertoImg} alt="" width={1920} height={1080} loading="lazy" className="w-full h-full object-cover" />
@@ -53,7 +53,7 @@ const FaqSection = () => {
                 <div
                   className={`overflow-hidden transition-all duration-300 ${openIdx === i ? "max-h-96 pb-5" : "max-h-0"}`}
                 >
-                  <p className="px-5 text-sm text-muted-foreground leading-relaxed">{f.a}</p>
+                  <p className="px-5 text-base text-muted-foreground leading-relaxed">{f.a}</p>
                 </div>
               </div>
             </AnimatedSection>

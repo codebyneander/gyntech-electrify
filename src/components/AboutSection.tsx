@@ -3,7 +3,7 @@ import eliasImg from "@/assets/elias-barbo.png";
 
 
 const AboutSection = () => (
-  <section id="empresa" className="relative py-20 lg:py-28 overflow-hidden">
+  <section id="empresa" className="relative py-24 lg:py-32 overflow-hidden">
     <div className="container grid lg:grid-cols-2 gap-16 items-center">
       {/* Photo */}
       <AnimatedSection className="flex justify-center lg:justify-start">

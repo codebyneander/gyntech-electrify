@@ -20,15 +20,15 @@ const services = [
 ];
 
 const ServicesSection = () => (
-  <section id="servicos" className="bg-surface-alt py-20 lg:py-28">
+  <section id="servicos" className="bg-surface-alt py-24 lg:py-32">
     <div className="container">
-      <AnimatedSection className="text-center mb-14">
+      <AnimatedSection className="text-center mb-16">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold">
           Especialização Modular: <span className="text-primary">Soluções Para Cada Cenário</span>
         </h2>
       </AnimatedSection>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((s, i) => (
           <AnimatedSection key={s.title} delay={i * 0.15}>
             <div className="glass-card h-full flex flex-col overflow-hidden hover:scale-[1.02] transition-transform duration-300 group">
@@ -37,7 +37,7 @@ const ServicesSection = () => (
                   <s.icon size={24} />
                 </div>
                 <h3 className="text-lg font-bold">{s.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{s.copy}</p>
+                <p className="text-base text-muted-foreground leading-relaxed">{s.copy}</p>
               </div>
             </div>
           </AnimatedSection>
