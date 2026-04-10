@@ -16,7 +16,7 @@ const HeroSection = () => (
     {/* BG: left half image, right half solid */}
     <div className="absolute inset-0">
       <img src={bgCharger} alt="" width={1920} height={1080} className="w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-background/75 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
     </div>
 
     <div className="container relative z-10 grid lg:grid-cols-2 gap-10 items-center py-16 lg:py-24">
@@ -25,31 +25,28 @@ const HeroSection = () => (
           <Zap size={14} /> Especialistas Oficiais em Eletromobilidade em Goiânia e Região Metropolitana
         </span>
 
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight tracking-tight">
-          Carregue o seu Veículo Elétrico no Conforto da sua Casa com{" "}
-          <span className="text-primary">Engenharia, Segurança</span> e Padronização.
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight tracking-tight text-white">
+          Instale seu Carregador Elétrico com{" "}
+          <span className="text-primary">Segurança e Engenharia</span> no Conforto da sua Casa.
         </h1>
 
-        <p className="text-base lg:text-lg text-muted-foreground max-w-xl leading-relaxed">
-          O seu veículo elétrico custou caro. A infraestrutura de recarga não é um serviço para aventureiros.
-          Oferecemos instalação profissional, laudos técnicos precisos, dimensionamento matemático de carga
-          e conformidade estrita com as Normas de Segurança ABNT (NBR 17019 e NBR 5410). Projetamos paz de
-          espírito para Residências, Condomínios Verticais e Redes Comerciais.
+        <p className="text-sm sm:text-base text-gray-300 max-w-2xl leading-relaxed">
+          Infraestrutura profissional com conformidade ABNT (NBR 17019 e NBR 5410), laudos técnicos e dimensionamento preciso. Para residências, condomínios e redes comerciais em Goiânia e região.
         </p>
 
         <a
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 self-start px-8 py-4 text-base font-bold bg-primary text-primary-foreground rounded-xl animate-pulse-glow hover:scale-105 transition-transform duration-300"
+          className="inline-flex items-center gap-3 self-start px-8 py-4 text-base font-bold bg-primary text-primary-foreground rounded-xl shadow-lg animate-pulse-glow hover:scale-105 transition-transform duration-300"
         >
           <Zap size={20} />
-          SOLICITAR ORÇAMENTO NO WHATSAPP
+          Falar com um Especialista
         </a>
 
         <div className="flex flex-wrap gap-4 mt-2">
           {trustItems.map((item) => (
-            <span key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
+            <span key={item} className="flex items-center gap-2 text-sm text-gray-300">
               <span className="w-5 h-5 rounded-full bg-primary/20 text-primary flex items-center justify-center text-xs">✓</span>
               {item}
             </span>
