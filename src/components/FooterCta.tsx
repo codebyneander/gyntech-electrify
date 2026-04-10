@@ -6,7 +6,7 @@ const WHATSAPP_URL = "https://wa.me/556293343548?text=Ol%C3%A1%20Elias!";
 const FooterCta = () => (
   <>
     {/* CTA Final */}
-    <section className="py-20 lg:py-28">
+    <section className="py-24 lg:py-32">
       <div className="container">
         <AnimatedSection>
           <div className="glass-card border-primary/30 p-8 md:p-14 text-center flex flex-col items-center gap-6 neon-glow">
@@ -33,8 +33,8 @@ const FooterCta = () => (
 
     {/* Footer */}
     <footer className="border-t border-border py-10">
-      <div className="container flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-muted-foreground">
-        <span className="font-heading font-extrabold text-lg text-foreground/60">GYNTECH Elétrica MOB</span>
+      <div className="container flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-muted-foreground">
+        <span className="font-heading font-extrabold text-lg text-foreground/80">GYNTECH Elétrica MOB</span>
         <div className="text-center md:text-right space-y-1">
           <p>CNPJ 54.987.788/0001-09 — Elias Maximiano Barbo ME</p>
           <p>Região Metropolitana de Goiânia, GO</p>

@@ -18,7 +18,7 @@ const differentials = [
 ];
 
 const MethodologySection = () => (
-  <section id="metodologia" className="relative py-20 lg:py-28 overflow-hidden">
+  <section id="metodologia" className="relative py-24 lg:py-32 overflow-hidden">
     <div className="container grid lg:grid-cols-2 gap-12 items-center">
       <AnimatedSection className="flex flex-col gap-6">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight">
@@ -36,7 +36,7 @@ const MethodologySection = () => (
               </div>
               <div>
                 <h3 className="font-bold text-base mb-1">{d.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{d.copy}</p>
+                <p className="text-base text-muted-foreground leading-relaxed">{d.copy}</p>
               </div>
             </AnimatedSection>
           ))}

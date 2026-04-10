@@ -43,7 +43,7 @@ const SocialProofBar = () => {
     <section className="bg-surface-alt border-y border-border py-10">
       <div className="container">
         <AnimatedSection>
-          <p className="text-center text-sm text-muted-foreground mb-6 font-medium">
+          <p className="text-center text-base text-muted-foreground mb-6 font-medium">
             Compatibilidade Técnica Garantida com as Principais Tecnologias do Mercado Global:
           </p>
         </AnimatedSection>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AnimatedSection from "./AnimatedSection";
 
 const ServicesInActionSection = () => (
-  <section id="demonstracoes" className="py-20 lg:py-28">
+  <section id="demonstracoes" className="py-24 lg:py-32">
     <div className="container">
       <AnimatedSection className="glass-card border-primary/20 p-8 md:p-14 text-center flex flex-col items-center gap-6">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight max-w-2xl">
